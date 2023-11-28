@@ -1,0 +1,341 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bodydraft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("grafittibackground.jpg");
+  background-position: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Pacifico;
+  font-size: xxx-large;
+}
+
+a {
+  font-family: Zeyada;
+}
+
+.container-landing-page1 {
+  width: fit-content;
+  height: fit-content;
+  /* Explore more with the flexbox properties! */
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-landing-page2 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* section 1 */
+.flex-container-01 {
+  display: flex;
+}
+
+.box-010 {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid black;
+}
+
+.box-011 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: -40px;
+  margin-right: -20px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+.box-012 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: -20px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid black
+}
+
+
+/* section 2 */
+.flex-container-02 {
+  display: flex;
+}
+
+.box-020 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid #000;
+}
+
+.box-021 {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  margin-left: -40px;
+  margin-right: -20px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+.box-022 {
+  background-color: white;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin-left: -20px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid #000
+}
+
+.box-023 {
+  background-color: white;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin-left: -40px;
+  margin-right: -20px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+
+/* section 3 */
+.flex-container-03 {
+  display: flex;
+}
+
+.box-030 {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid #000;
+}
+
+.box-031 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: -40px;
+  margin-right: -20px;
+  margin-top: 70px;
+  margin-bottom: -10px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+.box-032 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: -20px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid #000
+}
+
+.flex-container-04 {
+  display: flex;
+}
+
+.box-040 {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: -70px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+.box-041 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: -70px;
+  margin-right: -20px;
+  margin-top: -40px;
+  margin-bottom: -20px;
+  padding: 10px;
+  border: 20px solid #000
+}
+
+.box-042 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 60px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+.flex-container-05 {
+  display: flex;
+}
+
+.box-050 {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-left: 20px;
+  margin-right: -40px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+  padding: 1s0px;
+  border: 20px solid #000;
+}
+
+.box-051 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: -80px;
+  margin-top: -80px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 20px solid white
+}
+
+.box-052 {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: -60px;
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 20px solid #000
+}
+
+/* section 4 */
+.flex-container-06 {
+  display: flex;
+}
+
+.box-060 {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-left: -30px;
+  margin-right: -20px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding: 1s0px;
+  border: 20px solid white
+}
+
+.box-061 {
+  background-color: white;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: -80px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 20px solid #000
+}
+
+#canvas-container1 {
+  background-image: url(project-b-template/back.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.test {
+  overflow: hidden;
+}

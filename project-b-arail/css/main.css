@@ -1,0 +1,38 @@
+#canvas-container1 {
+    background-image: url(project-b-template/back.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.main-container {
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.interface-container {
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box1 {
+    background-color: #96B6C5;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    /* margin-left: -20px;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0px; */
+    /* padding: 10px; */
+}
