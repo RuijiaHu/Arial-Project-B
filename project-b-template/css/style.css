@@ -10,6 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("grafittibackground.jpg");
+  background-position: center;
 }
 
 p {
@@ -40,24 +42,11 @@ a {
 .container-landing-page2 {
   width: fit-content;
   height: fit-content;
-  /* Explore more with the flexbox properties! */
   display: flex;
-  /* position: fixed; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-
-
-/* .interface-container {
-  background-color: green;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 
 /* section 1 */
 .flex-container-01 {
@@ -75,7 +64,7 @@ a {
   margin-top: 50px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000;
+  border: 20px solid black;
 }
 
 .box-011 {
@@ -89,7 +78,7 @@ a {
   margin-top: 70px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid white
 }
 
 .box-012 {
@@ -103,7 +92,7 @@ a {
   margin-top: 50px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid black
 }
 
 
@@ -137,7 +126,7 @@ a {
   margin-top: 70px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid white
 }
 
 .box-022 {
@@ -165,7 +154,7 @@ a {
   margin-top: 70px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid white
 }
 
 
@@ -199,7 +188,7 @@ a {
   margin-top: 70px;
   margin-bottom: -10px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid white
 }
 
 .box-032 {
@@ -231,7 +220,7 @@ a {
   margin-top: -70px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000;
+  border: 20px solid white
 }
 
 .box-041 {
@@ -259,7 +248,7 @@ a {
   margin-top: -50px;
   margin-bottom: 0px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid white
 }
 
 .flex-container-05 {
@@ -291,7 +280,7 @@ a {
   margin-top: -80px;
   margin-bottom: 40px;
   padding: 10px;
-  border: 20px solid #000
+  border: 20px solid white
 }
 
 .box-052 {
@@ -324,7 +313,7 @@ a {
   margin-top: 100px;
   margin-bottom: 0px;
   padding: 1s0px;
-  border: 20px solid #000;
+  border: 20px solid white
 }
 
 .box-061 {

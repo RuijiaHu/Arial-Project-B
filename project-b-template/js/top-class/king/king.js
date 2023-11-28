@@ -1,11 +1,11 @@
 let x, y
 let img1, img2, img3, img4, img5
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 140
+let centerY = 140
+let theWidth = 240
+let theHeight = 270
+let changedWidth = 260
+let changedHeight = 290
 let isNormalActive = true
 
 function preload() {
@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(300, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);

@@ -1,22 +1,24 @@
 let x, y
 let img1, img2, img3, img4
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 130
+let centerY = 130
+let theWidth = 210
+let theHeight = 260
+let centerX1 = 150
+let centerY1 = 100
+let changedWidth = 250
+let changedHeight = 210
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/middle-class/pol/pol1.jpg");
-    img2 = loadImage("js/middle-class/pol/pol2.jpg");
-    img3 = loadImage("js/middle-class/pol/pol3.jpg");
-    img4 = loadImage("js/middle-class/pol/pol4.jpg");
+    img1 = loadImage("pol1.jpg");
+    img2 = loadImage("pol2.jpg");
+    img3 = loadImage("pol3.jpg");
+    img4 = loadImage("pol4.jpg");
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(300, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
@@ -42,11 +44,11 @@ function NormalPol() {
 }
 
 function InnerEmotionPol() {
-    if (frameCount % 90 < 30) {
-        image(img3, centerX, centerY, changedWidth, changedHeight);
+    if (frameCount % 120 < 50) {
+        image(img3, centerX1, centerY1, changedWidth, changedHeight);
     }
     else {
-        image(img4, centerX, centerY, changedWidth, changedHeight);
+        image(img4, centerX1, centerY1, changedWidth, changedHeight);
     }
 
 }

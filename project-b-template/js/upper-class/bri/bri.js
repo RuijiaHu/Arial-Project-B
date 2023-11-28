@@ -1,21 +1,21 @@
 let x, y
 let img1, img2, img3
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 85
+let centerY = 70
+let theWidth = 170
+let theHeight = 135
+let changedWidth = 180
+let changedHeight = 150
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/upper-class/bri/bri1.jpg");
-    img2 = loadImage("js/upper-class/bri/bri2.jpg");
-    img3 = loadImage("js/upper-class/bri/bri3.jpg");
+    img1 = loadImage("bri1.jpg");
+    img2 = loadImage("bri2.jpg");
+    img3 = loadImage("bri3.jpg");
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(200, 200);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);

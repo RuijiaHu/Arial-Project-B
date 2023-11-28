@@ -1,24 +1,24 @@
 let x, y
 let img1, img2, img3, img4, img5, img6
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 140
+let centerY = 140
+let theWidth = 220
+let theHeight = 250
+let changedWidth = 240
+let changedHeight = 270
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/middle-class/clo/clo1.jpg");
-    img2 = loadImage("js/middle-class/clo/clo2.jpg");
-    img3 = loadImage("js/middle-class/clo/clo3.jpg");
-    img4 = loadImage("js/middle-class/clo/clo4.jpg");
-    img5 = loadImage("js/middle-class/clo/clo5.jpg");
-    img6 = loadImage("js/middle-class/clo/clo6.jpg")
+    img1 = loadImage("clo1.jpg");
+    img2 = loadImage("clo2.jpg");
+    img3 = loadImage("clo3.jpg");
+    img4 = loadImage("clo4.jpg");
+    img5 = loadImage("clo5.jpg");
+    img6 = loadImage("clo6.jpg")
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(300, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);

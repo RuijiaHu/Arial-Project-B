@@ -1,23 +1,23 @@
 let x, y
 let img1, img2, img3, img4, img5
-let centerX = 100
-let centerY = 100
-let theWidth = 120
+let centerX = 90
+let centerY = 80
+let theWidth = 130
 let theHeight = 140
-let changedWidth = 140
+let changedWidth = 150
 let changedHeight = 160
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/upper-class/ent/ent1.jpg");
-    img2 = loadImage("js/upper-class/ent/ent2.jpg");
-    img3 = loadImage("js/upper-class/ent/ent3.jpg");
-    img4 = loadImage("js/upper-class/ent/ent4.jpg");
-    img5 = loadImage("js/upper-class/ent/ent5.jpg");
+    img1 = loadImage("ent1.jpg");
+    img2 = loadImage("ent2.jpg");
+    img3 = loadImage("ent3.jpg");
+    img4 = loadImage("ent4.jpg");
+    img5 = loadImage("ent5.jpg");
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(200, 200);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
@@ -46,7 +46,7 @@ function NormalEnt() {
 }
 
 function InnerEmotionEnt() {
-    if (frameCount % 90 < 45) {
+    if (frameCount % 110 < 55) {
         image(img4, centerX, centerY, changedWidth, changedHeight);
     }
     else {

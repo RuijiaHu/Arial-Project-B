@@ -1,24 +1,25 @@
 let x, y
 let img1, img2, img3, img4, img5, img6
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 150
+let centerY = 150
+let theWidth = 190
+let theHeight = 270
+let changedWidth = 220
+let changedHeight = 250
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/low-class/bag/bag1.jpg");
-    img2 = loadImage("js/low-class/bag/bag2.jpg");
-    img3 = loadImage("js/low-class/bag/bag3.jpg");
-    img4 = loadImage("js/low-class/bag/bag4.jpg");
-    img5 = loadImage("js/low-class/bag/bag5.jpg");
-    img6 = loadImage("js/low-class/bag/bag6.jpg")
+    img1 = loadImage("bag1.jpg");
+    img2 = loadImage("bag2.jpg");
+    img3 = loadImage("bag3.jpg");
+    img4 = loadImage("bag4.jpg");
+    img5 = loadImage("bag5.jpg");
+    img6 = loadImage("bag6.jpg");
+    img7 = loadImage("bag7.jpg")
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(300, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
@@ -50,11 +51,14 @@ function NormalBag() {
 }
 
 function InnerEmotionBag() {
-    if (frameCount % 90 <= 45) {
+    if (frameCount % 120 <= 45) {
         image(img5, centerX, centerY, changedWidth, changedHeight);
     }
-    else {
+    else if (frameCount % 120 <= 90) {
         image(img6, centerX, centerY, changedWidth, changedHeight);
+    }
+    else if (frameCount % 120 <= 120) {
+        image(img7, centerX, centerY, changedWidth, changedHeight);
     }
 
 }

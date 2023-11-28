@@ -1,23 +1,23 @@
 let x, y
 let img1, img2, img3, img4, img5
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 140
+let centerY = 140
+let theWidth = 250
+let theHeight = 210
+let changedWidth = 270
+let changedHeight = 230
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/middle-class/ath/ath1.jpg");
-    img2 = loadImage("js/middle-class/ath/ath2.jpg");
-    img3 = loadImage("js/middle-class/ath/ath3.jpg");
-    img4 = loadImage("js/middle-class/ath/ath4.jpg");
-    img5 = loadImage("js/middle-class/ath/ath5.jpg");
+    img1 = loadImage("ath1.jpg");
+    img2 = loadImage("ath2.jpg");
+    img3 = loadImage("ath3.jpg");
+    img4 = loadImage("ath4.jpg");
+    img5 = loadImage("ath5.jpg");
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(300, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
@@ -43,17 +43,17 @@ function NormalAth() {
 }
 
 function InnerEmotionAth() {
-    if (frameCount % 90 < 30) {
+    if (frameCount % 120 < 40) {
         image(img3, centerX, centerY, changedWidth, changedHeight);
     }
-    else if (frameCount % 90 < 60) {
+    else if (frameCount % 120 < 80) {
         image(img4, centerX, centerY, changedWidth, changedHeight);
     }
-    else if (frameCount % 90 < 90) {
+    else if (frameCount % 120 < 120) {
         image(img5, centerX, centerY, changedWidth, changedHeight);
     }
 }
 
-function ChangeAst() {
+function ChangeAth() {
     isNormalActive = !isNormalActive;
 }

@@ -1,23 +1,23 @@
 let x, y
 let img1, img2, img3, img4, img5
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 140
+let centerY = 130
+let theWidth = 220
+let theHeight = 240
+let changedWidth = 230
+let changedHeight = 260
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/top-class/xiaojie/xiaojie1.jpg");
-    img2 = loadImage("js/top-class/xiaojie/xiaojie2.jpg");
-    img3 = loadImage("js/top-class/xiaojie/xiaojie3.jpg");
-    img4 = loadImage("js/top-class/xiaojie/xiaojie4.jpg");
-    img5 = loadImage("js/top-class/xiaojie/xiaojie5.jpg");
+    img1 = loadImage("xiaojie1.jpg");
+    img2 = loadImage("xiaojie2.jpg");
+    img3 = loadImage("xiaojie3.jpg");
+    img4 = loadImage("xiaojie4.jpg");
+    img5 = loadImage("xiaojie5.jpg");
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(300, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);

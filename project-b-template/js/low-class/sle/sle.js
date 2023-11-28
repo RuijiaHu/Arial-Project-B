@@ -1,22 +1,22 @@
 let x, y
 let img1, img2, img3, img4
-let centerX = 100
-let centerY = 100
-let theWidth = 120
-let theHeight = 140
-let changedWidth = 140
-let changedHeight = 160
+let centerX = 300
+let centerY = 150
+let theWidth = 420
+let theHeight = 240
+let changedWidth = 460
+let changedHeight = 260
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("js/low-class/sle/sle1.jpg");
-    img2 = loadImage("js/low-class/sle/sle2.jpg");
-    img3 = loadImage("js/low-class/sle/sle3.jpg");
-    img4 = loadImage("js/low-class/sle/sle4.jpg");
+    img1 = loadImage("sle1.jpg");
+    img2 = loadImage("sle2.jpg");
+    img3 = loadImage("sle3.jpg");
+    img4 = loadImage("sle4.jpg");
 }
 
 function setup() {
-    createCanvas(640, 425);
+    createCanvas(600, 300);
     imageMode(CENTER)
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
