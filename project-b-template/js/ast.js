@@ -1,12 +1,14 @@
-let x, y
-let img1, img2, img3, img4, img5
-let centerX = 120
-let centerY = 120
-let theWidth = 220
-let theHeight = 240
-let changedWidth = 240
-let changedHeight = 260
-let isNormalActive = true
+let x, y;
+let img1, img2, img3, img4, img5;
+let centerX = 120;
+let centerY = 120;
+let theWidth = 220;
+let theHeight = 240;
+let changedWidth = 240;
+let changedHeight = 260;
+let isNormalActive = true;
+let mySound;
+// let hasPlayed = false; // Add this variable
 
 function preload() {
     img1 = loadImage("js/pics/ast1.jpg");
@@ -14,25 +16,28 @@ function preload() {
     img3 = loadImage("js/pics/ast3.jpg");
     img4 = loadImage("js/pics/ast4.jpg");
     img5 = loadImage("js/pics/ast5.jpg");
+    mySound = loadSound("js/sound/ast.ogg");
 }
 
 function setup() {
     createCanvas(300, 300);
-    imageMode(CENTER)
+    imageMode(CENTER);
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
     img3.filter(THRESHOLD);
+
+    // Add event listener to the button
+    // let emotionButton = select('#emotionButton');
+    // emotionButton.mousePressed(ChangeAst);
 }
 
 function draw() {
     background(255);
     if (isNormalActive) {
-        NormalAst()
+        NormalAst();
+    } else {
+        InnerEmotionAst();
     }
-    else {
-        InnerEmotionAst()
-    }
-
 }
 
 function NormalAst() {
@@ -48,12 +53,21 @@ function NormalAst() {
 function InnerEmotionAst() {
     if (frameCount % 90 < 45) {
         image(img4, centerX, centerY, changedWidth, changedHeight);
-    }
-    else {
+    } else {
         image(img5, centerX, centerY, changedWidth, changedHeight);
     }
 }
 
 function ChangeAst() {
     isNormalActive = !isNormalActive;
+    // if (mouseIsPressed) {
+    //     playSound();
+    // }
 }
+
+// function playSound() {
+//     if (!hasPlayed) {
+//         mySound.play();
+//         hasPlayed = true;
+//     }
+// }
