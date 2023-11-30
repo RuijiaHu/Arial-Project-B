@@ -11,10 +11,10 @@ let changedHeight = 210
 let isNormalActive = true
 
 function preload() {
-    img1 = loadImage("pol1.jpg");
-    img2 = loadImage("pol2.jpg");
-    img3 = loadImage("pol3.jpg");
-    img4 = loadImage("pol4.jpg");
+    img1 = loadImage("js/pics/pol1.jpg");
+    img2 = loadImage("js/pics/pol2.jpg");
+    img3 = loadImage("js/pics/pol3.jpg");
+    img4 = loadImage("js/pics/pol4.jpg");
 }
 
 function setup() {
