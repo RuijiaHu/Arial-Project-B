@@ -6,6 +6,23 @@
   margin: 0;
 }
 
+.body2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+}
+
+
+.bodydraft2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("grafittibackground2.jpg");
+}
+
 .bodydraft {
   display: flex;
   align-items: center;
@@ -15,13 +32,23 @@
 }
 
 p {
-  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
   padding: 0;
 }
+
+
 
 h1 {
   font-family: Pacifico;
   font-size: xxx-large;
+}
+
+.hhh1 {
+  font-family: Pacifico;
+  font-size: xxx-large;
+  align-items: center;
 }
 
 a {
@@ -46,6 +73,29 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.container-landing-page3 {
+  width: 800px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border: 10px solid black;
+}
+
+.container-landing-page4 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 40px;
+  background-color: white;
+  border: 10px solid black;
 }
 
 /* section 1 */
