@@ -7,11 +7,13 @@ let theHeight = 135
 let changedWidth = 180
 let changedHeight = 150
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/bri1.jpg");
     img2 = loadImage("js/pics/bri2.jpg");
     img3 = loadImage("js/pics/bri3.jpg");
+    mySound = loadSound("js/sound/bri.mp3");
 }
 
 function setup() {
@@ -46,4 +48,8 @@ function InnerEmotionBri() {
 
 function ChangeBri() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "bri");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

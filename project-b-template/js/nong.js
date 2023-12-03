@@ -7,12 +7,14 @@ let theHeight = 200
 let changedWidth = 270
 let changedHeight = 220
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/nong1.jpg");
     img2 = loadImage("js/pics/nong2.jpg");
     img3 = loadImage("js/pics/nong3.jpg");
     img4 = loadImage("js/pics/nong4.jpg");
+    mySound = loadSound("js/sound/nong.wav");
 }
 
 function setup() {
@@ -53,4 +55,8 @@ function InnerEmotionNong() {
 
 function ChangeNong() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "nong");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

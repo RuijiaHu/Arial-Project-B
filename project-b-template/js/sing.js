@@ -7,6 +7,7 @@ let theHeight = 230
 let changedWidth = 240
 let changedHeight = 250
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/sing1.jpg");
@@ -14,6 +15,7 @@ function preload() {
     img3 = loadImage("js/pics/sing3.jpg");
     img4 = loadImage("js/pics/sing4.jpg");
     img5 = loadImage("js/pics/sing5.jpg");
+    mySound = loadSound("js/sound/sing.mp3");
 }
 
 function setup() {
@@ -56,4 +58,8 @@ function InnerEmotionSing() {
 
 function ChangeSing() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "sing");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

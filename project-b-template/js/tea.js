@@ -7,6 +7,7 @@ let theHeight = 230
 let changedWidth = 240
 let changedHeight = 250
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/tea1.jpg");
@@ -14,6 +15,7 @@ function preload() {
     img3 = loadImage("js/pics/tea3.jpg");
     img4 = loadImage("js/pics/tea4.jpg");
     img5 = loadImage("js/pics/tea5.jpg");
+    mySound = loadSound("js/sound/tea.wav");
 }
 
 function setup() {
@@ -56,4 +58,8 @@ function InnerEmotionTea() {
 
 function ChangeTea() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "tea");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

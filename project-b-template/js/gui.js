@@ -7,12 +7,14 @@ let theHeight = 240
 let changedWidth = 240
 let changedHeight = 260
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/gui1.jpg");
     img2 = loadImage("js/pics/gui2.jpg");
     img3 = loadImage("js/pics/gui3.jpg");
     img4 = loadImage("js/pics/gui4.jpg");
+    mySound = loadSound("js/sound/gui.mp3");
 }
 
 function setup() {
@@ -53,4 +55,8 @@ function InnerEmotionGui() {
 
 function ChangeGui() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "gui");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

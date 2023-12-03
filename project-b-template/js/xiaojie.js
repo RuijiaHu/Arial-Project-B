@@ -7,6 +7,7 @@ let theHeight = 240
 let changedWidth = 230
 let changedHeight = 260
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/xiaojie1.jpg");
@@ -14,6 +15,7 @@ function preload() {
     img3 = loadImage("js/pics/xiaojie3.jpg");
     img4 = loadImage("js/pics/xiaojie4.jpg");
     img5 = loadImage("js/pics/xiaojie5.jpg");
+    mySound = loadSound("js/sound/xiaojie.wav");
 }
 
 function setup() {
@@ -56,4 +58,13 @@ function InnerEmotionXiaojie() {
 
 function ChangeXiaojie() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "xiaojie");
+    setTimeout(hideLocalStorage, 4000)
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
+}
+
+function hideLocalStorage() {
+    localStorage.setItem("state", "hidden")
 }

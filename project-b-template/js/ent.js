@@ -7,6 +7,7 @@ let theHeight = 140
 let changedWidth = 150
 let changedHeight = 160
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/ent1.jpg");
@@ -14,6 +15,7 @@ function preload() {
     img3 = loadImage("js/pics/ent3.jpg");
     img4 = loadImage("js/pics/ent4.jpg");
     img5 = loadImage("js/pics/ent5.jpg");
+    mySound = loadSound("js/sound/ent.mp3");
 }
 
 function setup() {
@@ -56,4 +58,8 @@ function InnerEmotionEnt() {
 
 function ChangeEnt() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "ent");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

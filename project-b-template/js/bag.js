@@ -7,6 +7,7 @@ let theHeight = 270
 let changedWidth = 220
 let changedHeight = 250
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/bag1.jpg");
@@ -15,7 +16,8 @@ function preload() {
     img4 = loadImage("js/pics/bag4.jpg");
     img5 = loadImage("js/pics/bag5.jpg");
     img6 = loadImage("js/pics/bag6.jpg");
-    img7 = loadImage("js/pics/bag7.jpg")
+    img7 = loadImage("js/pics/bag7.jpg");
+    mySound = loadSound("js/sound/bag.wav");
 }
 
 function setup() {
@@ -65,4 +67,8 @@ function InnerEmotionBag() {
 
 function ChangeBag() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "bag");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

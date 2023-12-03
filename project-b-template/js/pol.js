@@ -9,12 +9,14 @@ let centerY1 = 100
 let changedWidth = 250
 let changedHeight = 210
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/pol1.jpg");
     img2 = loadImage("js/pics/pol2.jpg");
     img3 = loadImage("js/pics/pol3.jpg");
     img4 = loadImage("js/pics/pol4.jpg");
+    mySound = loadSound("js/sound/pol.wav");
 }
 
 function setup() {
@@ -55,4 +57,8 @@ function InnerEmotionPol() {
 
 function ChangePol() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "pol");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

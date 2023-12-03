@@ -7,11 +7,13 @@ let theHeight = 220
 let changedWidth = 240
 let changedHeight = 240
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/wor1.jpg");
     img2 = loadImage("js/pics/wor2.jpg");
     img3 = loadImage("js/pics/wor3.jpg");
+    mySound = loadSound("js/sound/wor.wav");
 }
 
 function setup() {
@@ -46,4 +48,8 @@ function InnerEmotionWor() {
 
 function ChangeWor() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "wor");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

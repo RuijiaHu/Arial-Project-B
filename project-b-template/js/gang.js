@@ -7,12 +7,14 @@ let theHeight = 125
 let changedWidth = 180
 let changedHeight = 135
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/gang1.jpg");
     img2 = loadImage("js/pics/gang2.jpg");
     img3 = loadImage("js/pics/gang3.jpg");
     img4 = loadImage("js/pics/gang4.jpg");
+    mySound = loadSound("js/sound/gang.mp3");
 }
 
 function setup() {
@@ -53,4 +55,8 @@ function InnerEmotionGang() {
 
 function ChangeGang() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "gang");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

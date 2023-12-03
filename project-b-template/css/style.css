@@ -1,3 +1,33 @@
+p {
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 0;
+}
+
+a {
+  font-family: Zeyada;
+}
+
+
+/* astDia */
+.dia {
+  width: 150px;
+  height: 70px;
+  background-color: blue;
+}
+
+.container-landing-page5 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+/* first page: main-index.html */
 .body {
   display: flex;
   align-items: center;
@@ -6,59 +36,9 @@
   margin: 0;
 }
 
-.body2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-
-}
-
-
-.bodydraft2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("grafittibackground2.jpg");
-}
-
-.bodydraft {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("grafittibackground.jpg");
-  background-position: center;
-}
-
-p {
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 0;
-}
-
-
-
-h1 {
-  font-family: Pacifico;
-  font-size: xxx-large;
-}
-
-.hhh1 {
-  font-family: Pacifico;
-  font-size: xxx-large;
-  align-items: center;
-}
-
-a {
-  font-family: Zeyada;
-}
-
 .container-landing-page1 {
   width: fit-content;
   height: fit-content;
-  /* Explore more with the flexbox properties! */
   display: flex;
   position: fixed;
   justify-content: center;
@@ -66,13 +46,26 @@ a {
   flex-direction: column;
 }
 
-.container-landing-page2 {
-  width: fit-content;
-  height: fit-content;
+h1 {
+  font-family: Pacifico;
+  font-size: xxx-large;
+}
+
+
+/* secon page: intro.html */
+.bodydraft2 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  background-image: url("grafittibackground2.jpg");
+}
+
+.body2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container-landing-page3 {
@@ -86,6 +79,12 @@ a {
   border: 10px solid black;
 }
 
+.head {
+  font-family: Pacifico;
+  font-size: xxx-large;
+  align-items: center;
+}
+
 .container-landing-page4 {
   width: fit-content;
   height: fit-content;
@@ -96,6 +95,25 @@ a {
   margin-left: 40px;
   background-color: white;
   border: 10px solid black;
+}
+
+
+/* third page: main.html */
+.bodydraft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("grafittibackground.jpg");
+  background-position: center;
+}
+
+.container-landing-page2 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* section 1 */
@@ -144,7 +162,6 @@ a {
   padding: 10px;
   border: 20px solid black
 }
-
 
 /* section 2 */
 .flex-container-02 {
@@ -206,7 +223,6 @@ a {
   padding: 10px;
   border: 20px solid white
 }
-
 
 /* section 3 */
 .flex-container-03 {
@@ -388,4 +404,15 @@ a {
 
 .test {
   overflow: hidden;
+}
+
+.dial {
+  background-color: aqua;
+  color: blue;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
 }

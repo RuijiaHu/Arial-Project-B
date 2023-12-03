@@ -7,6 +7,7 @@ let theHeight = 210
 let changedWidth = 270
 let changedHeight = 230
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/ath1.jpg");
@@ -14,6 +15,7 @@ function preload() {
     img3 = loadImage("js/pics/ath3.jpg");
     img4 = loadImage("js/pics/ath4.jpg");
     img5 = loadImage("js/pics/ath5.jpg");
+    mySound = loadSound("js/sound/ath.wav");
 }
 
 function setup() {
@@ -56,4 +58,8 @@ function InnerEmotionAth() {
 
 function ChangeAth() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "ath");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

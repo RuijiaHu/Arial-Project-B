@@ -8,7 +8,6 @@ let changedWidth = 240;
 let changedHeight = 260;
 let isNormalActive = true;
 let mySound;
-// let hasPlayed = false; // Add this variable
 
 function preload() {
     img1 = loadImage("js/pics/ast1.jpg");
@@ -25,10 +24,6 @@ function setup() {
     img1.filter(THRESHOLD);
     img2.filter(THRESHOLD);
     img3.filter(THRESHOLD);
-
-    // Add event listener to the button
-    // let emotionButton = select('#emotionButton');
-    // emotionButton.mousePressed(ChangeAst);
 }
 
 function draw() {
@@ -60,14 +55,9 @@ function InnerEmotionAst() {
 
 function ChangeAst() {
     isNormalActive = !isNormalActive;
-    // if (mouseIsPressed) {
-    //     playSound();
-    // }
+    localStorage.setItem("state", "ast");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }
 
-// function playSound() {
-//     if (!hasPlayed) {
-//         mySound.play();
-//         hasPlayed = true;
-//     }
-// }

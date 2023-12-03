@@ -7,12 +7,14 @@ let theHeight = 240
 let changedWidth = 460
 let changedHeight = 260
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/sle1.jpg");
     img2 = loadImage("js/pics/sle2.jpg");
     img3 = loadImage("js/pics/sle3.jpg");
     img4 = loadImage("js/pics/sle4.jpg");
+    mySound = loadSound("js/sound/sle.wav");
 }
 
 function setup() {
@@ -53,4 +55,8 @@ function InnerEmotionSle() {
 
 function ChangeSle() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "sle");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

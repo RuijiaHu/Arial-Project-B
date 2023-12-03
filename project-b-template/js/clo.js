@@ -7,6 +7,7 @@ let theHeight = 250
 let changedWidth = 240
 let changedHeight = 270
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/clo1.jpg");
@@ -14,7 +15,8 @@ function preload() {
     img3 = loadImage("js/pics/clo3.jpg");
     img4 = loadImage("js/pics/clo4.jpg");
     img5 = loadImage("js/pics/clo5.jpg");
-    img6 = loadImage("js/pics/clo6.jpg")
+    img6 = loadImage("js/pics/clo6.jpg");
+    mySound = loadSound("js/sound/clo.mp3");
 }
 
 function setup() {
@@ -61,4 +63,8 @@ function InnerEmotionClo() {
 
 function ChangeClo() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "clo");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

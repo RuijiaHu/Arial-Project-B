@@ -7,11 +7,13 @@ let theHeight = 240
 let changedWidth = 240
 let changedHeight = 260
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/mom1.jpg");
     img2 = loadImage("js/pics/mom2.jpg");
     img3 = loadImage("js/pics/mom3.jpg");
+    mySound = loadSound("js/sound/mom.wav");
 }
 
 function setup() {
@@ -46,4 +48,8 @@ function InnerEmotionMom() {
 
 function ChangeMom() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "mom");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }

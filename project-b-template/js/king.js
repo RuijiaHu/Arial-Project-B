@@ -7,6 +7,7 @@ let theHeight = 270
 let changedWidth = 260
 let changedHeight = 290
 let isNormalActive = true
+let mySound;
 
 function preload() {
     img1 = loadImage("js/pics/king1.jpg");
@@ -14,6 +15,7 @@ function preload() {
     img3 = loadImage("js/pics/king3.jpg");
     img4 = loadImage("js/pics/king4.jpg");
     img5 = loadImage("js/pics/king5.jpg");
+    mySound = loadSound("js/sound/king.wav");
 }
 
 function setup() {
@@ -56,4 +58,8 @@ function InnerEmotionKing() {
 
 function ChangeKing() {
     isNormalActive = !isNormalActive;
+    localStorage.setItem("state", "king");
+    if (!mySound.isPlaying()) {
+        mySound.play();
+    }
 }
