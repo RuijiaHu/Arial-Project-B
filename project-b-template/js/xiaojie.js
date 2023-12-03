@@ -58,13 +58,20 @@ function InnerEmotionXiaojie() {
 
 function ChangeXiaojie() {
     isNormalActive = !isNormalActive;
+    // if (frameCount <= 1500) {
     localStorage.setItem("state", "xiaojie");
-    setTimeout(hideLocalStorage, 4000)
+    // }
+    // else {
+    // localStorage.clear("state", "xiaojie")
+    // }
+
     if (!mySound.isPlaying()) {
         mySound.play();
     }
 }
 
-function hideLocalStorage() {
-    localStorage.setItem("state", "hidden")
-}
+
+// setTimeout(hideLocalStorage, 4000)
+// function hideLocalStorage() {
+//     localStorage.setItem("state", "hidden")
+// }

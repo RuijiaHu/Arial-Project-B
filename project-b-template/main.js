@@ -12,15 +12,15 @@ function draw() {
 
     if (value == "gui") {
         let div = document.getElementById("dial-01");
-        div.style.display = "block";
+        div.style.display = "flex";
     }
     if (value == "king") {
         let div = document.getElementById("dial-02");
-        div.style.display = "block";
+        div.style.display = "flex";
     }
     if (value == "xiaojie") {
         let div = document.getElementById("dial-03");
-        div.style.display = "block";
+        div.style.display = "flex";
     }
     if (value == "fu") {
         let div = document.getElementById("dial-04");
