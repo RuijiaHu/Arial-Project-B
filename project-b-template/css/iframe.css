@@ -1,3 +1,10 @@
 body {
     overflow: hidden;
 }
+
+button {
+    height: 25px;
+    background-color: mintcream;
+    border-width: 2px;
+    border-style: dashed;
+}
