@@ -1,6 +1,6 @@
 localStorage.setItem("state", 0);
 
-let DIAL_DELAY = 2000;
+let DIAL_DELAY = 4000;
 
 
 function setup() {
